@@ -1,5 +1,6 @@
 ;(function($){
 	'use strict';
+     
      $(window).on('load', function() {
 
      	$('.ba-slider').slick({
@@ -35,8 +36,6 @@
 
      function createMap () {
           var $markers =$('.ba-marker');
-          console.log($markers);
-
           var map = new google.maps.Map($('.ba-map')[0],{
                maxZoom:16,
                scrollwheel: false,
