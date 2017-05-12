@@ -1,0 +1,139 @@
+@import'normalize.css';
+@import'layout';
+
+@import'slick';
+@import'slick-theme';
+
+$primary-color:#ff9b51;
+$secondary-color:#333333;
+
+.ba-container {
+	width: 1115px;
+}
+.ba-header {
+	background-color: #000000;
+}
+.ba-logo {
+	padding-top: 5px;
+	display: inline-block;
+	font-family: 'Myriad Pro'sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #FFF;
+	margin: 15px;
+	&__color {
+		color: $primary-color;
+	}
+}
+.ba-navigation {
+	float: right;
+	position: relative;
+	right: -40px;
+
+	&__list {
+		list-style-type: none;
+		
+	}
+	&__item {
+		font-family: 'Open sans',sans-serif;
+		font-size: 14px;
+		float: left;
+		padding-right: 45px;
+		padding-top: 15px;
+		transition: .8s ease-in;
+	}
+	&__link {
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+		transition: .3s ease-in;
+		padding-bottom: 5px;
+		color: #B0B0B0;
+		&:hover {
+			border-color: #fff;
+			color: $primary-color;
+			
+			
+		}
+		
+		
+	}
+
+}
+  // <!-- SLIDER SECTION -->
+
+  .ba-slider {
+  	padding-top: 10px;
+  	width: 600px;
+  	margin: 0 auto;
+  	outline: none;
+  	
+  }
+// .ba-prev,
+.ba-next {
+	background-color: transparent;
+	border:none;
+	position: absolute;
+	top: 40%;
+	left: 1030px;
+	transform: translate(0, -50%);
+	color:red;
+	font-size: 30px;
+	font-weight: 100;
+	cursor: pointer;
+	outline: none;
+	&--left {
+		// left: 0;
+	}
+	&--right {
+		right: 0;
+	}
+}
+.ba-prev {
+	background-color: transparent;
+	border:none;
+	position: absolute;
+	top: 40%;
+	left: 300px;
+	transform: translate(0, -50%);
+	color:red;
+	font-size: 30px;
+	font-weight: 100;
+	cursor: pointer;
+	outline: none;
+}
+
+.wrapper {
+	background: url("../images/image.jpg");
+	padding-bottom: 70px;
+}
+
+.ba-slide {
+	outline-style: none;
+}
+.ba-slider-navigation {
+	padding-top: 10px;
+	img {
+		margin-left: 10px;
+		
+	}
+}
+
+// MAP SECTION
+
+.ba-map {
+	height: 700px;
+}
+
+// TEST SECTION
+
+
+.contact {
+	height: 700px;
+	background-color: grey;
+	text-align: center;
+	font-size: 30px;
+	h2 {
+		margin: 0;
+	}
+}
